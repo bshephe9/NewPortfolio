@@ -1,0 +1,35 @@
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.page-footer{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+}
+
+.p{ 
+    font-size: 1em;
+}
+
+#aboutMe {
+    font-family: 'Krub', sans-serif;
+    margin-top: 3em;
+    margin-bottom: 5em;
+    border: 0.04em solid gray;
+    width: 75%;
+    padding: 2em;
+    text-align: center;
+    border-radius: 1em;
+}
+
+#headshot { 
+    border-radius: 1em;
+    float: left;
+    padding-right: 2em;
+}
