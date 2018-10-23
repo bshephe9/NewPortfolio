@@ -1,35 +1,50 @@
 
+html { 
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
-    display: flex;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    perspective: 1em;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "luna";
+}
+
+header { 
+    box-sizing: border-box;
     min-height: 100vh;
-    flex-direction: column;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
 }
 
-.page-footer{
-    position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   color: white;
+header h1 { 
+    margin-top: -100px;
 }
 
-.p{ 
-    font-size: 1em;
+header, header:before { 
+    background: 50% 50% / cover;
 }
 
-#aboutMe {
-    font-family: 'Krub', sans-serif;
-    margin-top: 3em;
-    margin-bottom: 5em;
-    border: 0.04em solid gray;
-    width: 75%;
-    padding: 2em;
-    text-align: center;
-    border-radius: 1em;
-}
-
-#headshot { 
-    border-radius: 1em;
-    float: left;
-    padding-right: 2em;
+header::before { 
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    background-image: url();
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px)scale(2);
+    z-index: -1;
+    min-height: 100vh;
 }
